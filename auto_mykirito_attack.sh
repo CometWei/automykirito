@@ -3,6 +3,7 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export  PATH
 
+user=5ec20f7fe64003000a614820.D6gLTIXi3Y1621433153491.105926074920423477125
 attackuserlevel=0
 attackuser=0
 list=0
@@ -29,7 +30,7 @@ attack(){
             -H $"Referer: https://mykirito.com/profile/${attackuser}" \
             -H $'Cookie: __cfduid=d41084fb786e67349cb642c917c54b29b1589897113; G_ENABLED_IDPS=google; G_AUTHUSER_H=0' \
             -b $'__cfduid=d41084fb786e67349cb642c917c54b29b1589897113; G_ENABLED_IDPS=google; G_AUTHUSER_H=0' \
-            --data-binary $"{\"type\":0,\"opponentUID\":\"${attackuser}\",\"shout\":\"\",\"lv\":${attackuserlevel}}" \
+            --data-binary $"{\"type\":0,\"opponentUID\":\"${attackuser}\",\"shout\":\"\",\"lv\":12}" \
             $'https://mykirito.com/api/challenge'
             ;;
         "1")
