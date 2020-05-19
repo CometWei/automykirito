@@ -29,7 +29,7 @@ attack(){
             -H $"Referer: https://mykirito.com/profile/${attackuser}" \
             -H $'Cookie: __cfduid=d41084fb786e67349cb642c917c54b29b1589897113; G_ENABLED_IDPS=google; G_AUTHUSER_H=0' \
             -b $'__cfduid=d41084fb786e67349cb642c917c54b29b1589897113; G_ENABLED_IDPS=google; G_AUTHUSER_H=0' \
-            --data-binary $'{\"type\":0,\"opponentUID\":\"5ec0d3d545eadc000a0d72bc\",\"shout\":\"\",\"lv\":9}' \
+            --data-binary $"{\"type\":0,\"opponentUID\":\"${attackuser}\",\"shout\":\"\",\"lv\":9}" \
             $'https://mykirito.com/api/challenge'
             ;;
         "1")
