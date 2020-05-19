@@ -26,7 +26,7 @@ attack(){
             -H $'Content-Length: 69' \
             -H $'Origin: https://mykirito.com' \
             -H $'Connection: close' \
-            -H $'Referer: https://mykirito.com/profile/5ec0d3d545eadc000a0d72bc' \
+            -H $"Referer: https://mykirito.com/profile/${attackuser}" \
             -H $'Cookie: __cfduid=d41084fb786e67349cb642c917c54b29b1589897113; G_ENABLED_IDPS=google; G_AUTHUSER_H=0' \
             -b $'__cfduid=d41084fb786e67349cb642c917c54b29b1589897113; G_ENABLED_IDPS=google; G_AUTHUSER_H=0' \
             --data-binary $'{\"type\":0,\"opponentUID\":\"5ec0d3d545eadc000a0d72bc\",\"shout\":\"\",\"lv\":9}' \
