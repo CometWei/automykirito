@@ -29,7 +29,7 @@ attack(){
             -H $"Referer: https://mykirito.com/profile/${attackuser}" \
             -H $'Cookie: __cfduid=d41084fb786e67349cb642c917c54b29b1589897113; G_ENABLED_IDPS=google; G_AUTHUSER_H=0' \
             -b $'__cfduid=d41084fb786e67349cb642c917c54b29b1589897113; G_ENABLED_IDPS=google; G_AUTHUSER_H=0' \
-            --data-binary $"{\"type\":0,\"opponentUID\":\"${attackuser}\",\"shout\":\"\",\"lv\":9}" \
+            --data-binary $"{\"type\":0,\"opponentUID\":\"${attackuser}\",\"shout\":\"\",\"lv\":${attackuserlevel}}" \
             $'https://mykirito.com/api/challenge'
             ;;
         "1")
@@ -44,7 +44,7 @@ attack(){
             -H $'Content-Length: 69' \
             -H $'Origin: https://mykirito.com' \
             -H $'Connection: close' \
-            -H $"Referer: https://mykirito.com/profile/\"${attackuser}\"" \
+            -H $"Referer: https://mykirito.com/profile/${attackuser} \
             -H $'Cookie: __cfduid=ddedfc675485a5bf044726373853f27011589797807; G_ENABLED_IDPS=google; G_AUTHUSER_H=0' \
             -b $'__cfduid=ddedfc675485a5bf044726373853f27011589797807; G_ENABLED_IDPS=google; G_AUTHUSER_H=0' \
             --data-binary $"{\"type\":1,\"opponentUID\":\"${attackuser}\",\"shout\":\"\",\"lv\":${attackuserlevel}}" \
