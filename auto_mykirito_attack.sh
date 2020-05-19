@@ -21,7 +21,7 @@ attack(){
             -H $'Accept: application/json, text/plain, */*' \
             -H $'Accept-Language: zh-TW,zh;q=0.8,en-US;q=0.5,en;q=0.3' \
             -H $'Accept-Encoding: gzip, deflate' \
-            -H $'token: 5ec20f7fe64003000a614820.D6gLTIXi3Y1621433153491.105926074920423477125' \
+            -H $"token: ${user}" \
             -H $'Content-Type: application/json;charset=utf-8' \
             -H $'Content-Length: 69' \
             -H $'Origin: https://mykirito.com' \
