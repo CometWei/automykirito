@@ -173,7 +173,7 @@ schedule_action(){
     while [ $i -le 100 ]
     do
         printf "[%-100s] %d%% \r" "$b" "$i";
-        sleep 1
+        sleep 1.01
         ((i=i+1))
         b+='>'
     done
